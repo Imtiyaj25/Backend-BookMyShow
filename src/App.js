@@ -1,9 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About-2";
-import AnotherComponent from "./components/anather";
-import ParentComponent from "./components/parent";
-import Navbar from "./components/Navbar";
-import ExperiencesForm from "./components/mycomp";
+import ParentComponent from "./components/Pages/Preview";
 
 function App() {
   return (
