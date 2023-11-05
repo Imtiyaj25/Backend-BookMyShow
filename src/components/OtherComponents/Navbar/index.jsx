@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Curriculum from '../../images/curriculum-vitae.png';
 
 const Navbar = () => {
   return (
@@ -7,17 +9,26 @@ const Navbar = () => {
             <div class="container">
                 <div class = "navbar-content">
                     <div class = "brand-and-toggler">
-                        <a href = "index.html" class = "navbar-brand">
-                            <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon"/>
+                        <a href = "/" class = "navbar-brand">
+                            <img src = {Curriculum} alt = "" class = "navbar-brand-icon"/>
                             <span class = "navbar-brand-text"/>build <span>resume.</span>
                         </a>
-                        <button type = "button" class = "navbar-toggler-btn">
-                            <div class = "bars">
-                                <div class = "bar"></div>
-                                <div class = "bar"></div>
-                                <div class = "bar"></div>
-                            </div>
-                        </button>
+                        <div>
+                            <nav className="">
+                                <ul className="navbar-list">
+                                    <li className="navbar-item">
+                                        <Link to="/" className='navbar-link'>Home</Link>
+                                    </li>
+                                    <li className="navbar-item">
+                                        <Link to="/parentcomponent" className='navbar-link'>Details</Link>
+                                    </li>
+                                    <li className="navbar-item">
+                                        <Link to="/aboutpage" className='navbar-link'>About</Link>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -29,11 +29,9 @@ const Skills = ({ skills, onSkillsChange }) => {
                                                 <span class="form-text"></span>
                                             </div>
                                             
-                                            <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
                                         </div>
                                     </div>
                                 </div>
-                                <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
                             </div>
                         </div>
 
