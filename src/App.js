@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes, Switch } from "react-router-dom";
 import ParentComponent from "./components/Pages/Preview";
 import Navbar from "./components/OtherComponents/Navbar";
 import HomePage from "./components/Pages/Home";
@@ -10,11 +10,17 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/aboutpage" element={<AboutPage/>}/>
-        <Route path="/parentcomponent" element={<ParentComponent/>}/>
+        <Route path="/" exact Component={HomePage}/>
+        
       </Routes>
-      <Footer/>
+      {/* <Routes>
+        <Route path="" element={<Navbar/>}>
+          <Route path="/" exact element={<HomePage/>}/>
+          <Route path="/aboutpage" element={<AboutPage/>}/>
+          <Route path="/parentcomponent" element={<ParentComponent/>}/>
+        </Route>
+        
+      </Routes> */}
     </BrowserRouter>
   );
 }
