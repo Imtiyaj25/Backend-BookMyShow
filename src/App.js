@@ -10,17 +10,12 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path="/" exact Component={HomePage}/>
-        
+        <Route path="/React-Resume" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/aboutpage" element={<AboutPage/>}/>
+        <Route path="/parentcomponent" element={<ParentComponent/>}/>        
       </Routes>
-      {/* <Routes>
-        <Route path="" element={<Navbar/>}>
-          <Route path="/" exact element={<HomePage/>}/>
-          <Route path="/aboutpage" element={<AboutPage/>}/>
-          <Route path="/parentcomponent" element={<ParentComponent/>}/>
-        </Route>
-        
-      </Routes> */}
+      <Footer/>
     </BrowserRouter>
   );
 }
