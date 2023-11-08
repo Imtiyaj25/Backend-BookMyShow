@@ -19,7 +19,7 @@ const HomePage = () => {
             minutes - try now for free!
           </p>
           <Link
-            to="/parentcomponent"
+            to="/React-Resume/parentcomponent"
             className="btn btn-primary text-uppercase"
           >
             Create my resume

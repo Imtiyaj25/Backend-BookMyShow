@@ -18,7 +18,7 @@ const AboutPage = () => {
                         <h2 class = "lg-title">Use the best resume maker as your guide!</h2>
                         <p class = "text">Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real advantage with the best online resume maker: created by experts, imporved by data, trusted by millions of professionals.</p>
                         <div class = "btn-group">
-                            <Link to="/parentcomponent" className="btn btn-primary text-uppercase">Create my resume</Link>
+                            <Link to="/React-Resume/parentcomponent" className="btn btn-primary text-uppercase">Create my resume</Link>
                             <a href = "#" class = "btn btn-secondary text-uppercase">watch video</a>
                         </div>
                     </div>

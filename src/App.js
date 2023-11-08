@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path="/React-Resume" element={<HomePage/>}/>
+        {/* <Route path="/React-Resume" element={<HomePage/>}/> */}
         <Route path="/" element={<HomePage/>}/>
         <Route path="/aboutpage" element={<AboutPage/>}/>
         <Route path="/parentcomponent" element={<ParentComponent/>}/>        
