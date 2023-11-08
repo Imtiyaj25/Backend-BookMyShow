@@ -3,7 +3,7 @@ import Visual from '../../images/visual-0c7080adf17f1f207276f613447c924f667dab34
 import Feature_1 from '../../images/feature-1-edf4481d69166ac81917d1e40e6597c8d61aa970ad44367ce78049bf830fbda5.svg';
 import Feature_2 from '../../images/feature-2-a7a471bd973c02a55d1b3f8aff578cd3c9a4c5ac4fc74423d94ecc04aef3492b.svg';
 import Feature_3 from '../../images/feature-3-4e87a82f83e260488c36f8105e26f439fdc3ee5009372bb5e12d9421f32eabdd.svg';
-
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -18,7 +18,7 @@ const AboutPage = () => {
                         <h2 class = "lg-title">Use the best resume maker as your guide!</h2>
                         <p class = "text">Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real advantage with the best online resume maker: created by experts, imporved by data, trusted by millions of professionals.</p>
                         <div class = "btn-group">
-                            <a href = "parentcomponent" class = "btn btn-primary text-uppercase">create my resume</a>
+                            <Link to="/parentcomponent" className="btn btn-primary text-uppercase">Create my resume</Link>
                             <a href = "#" class = "btn btn-secondary text-uppercase">watch video</a>
                         </div>
                     </div>
