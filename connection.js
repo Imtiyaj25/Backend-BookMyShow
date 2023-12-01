@@ -1,4 +1,4 @@
-// // connection.js
+// connection.js
 // const mongoose = require("mongoose");
 
 // async function connectToDatabase() {
@@ -13,8 +13,6 @@
 
 
 // New Code Goes From Here
-
-
 const mongoose = require("mongoose");
 require("dotenv").config(); // Load environment variables from .env file
 
